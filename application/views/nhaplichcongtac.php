@@ -56,8 +56,7 @@
         </fieldset>
         <input type="submit" class="btn btn-success btn-block" value="Thêm mới">  
       </form>
-  </div>     
-
+  </div> 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     

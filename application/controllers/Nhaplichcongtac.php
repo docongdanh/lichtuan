@@ -40,7 +40,9 @@ class Nhaplichcongtac extends CI_Controller {
 		// $dulieu = array('dulieutucontroller' => $dulieu); //bien du lieu thanh dang mang voi key la du lieu tu controller
 		// echo '<pre>';
 		// var_dump($dulieu);
-		$this->load->view('lichcongtac', $dulieu, FALSE);
+		//$this->load->view('nhaplichcongtac', $dulieu, FALSE);		
+		$this->load->view('nhaplichcongtac', $dulieu, FALSE);	
+		$this->load->view('lichcongtac', $dulieu, FALSE);		
 		
 	}
 

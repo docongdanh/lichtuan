@@ -19,6 +19,11 @@ class showData extends CI_Model {
 		// echo '</pre>';
 		return $ketqua;
 	}
+	public function deleteDataById($id)
+	{
+		$this->db->where('id',$id);
+		return $this->db->delete('lct');		
+	}
 }
 
 /* End of file showData.php */

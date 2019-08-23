@@ -28,5 +28,5 @@ class xemlich extends CI_Controller {
 		// var_dump($dulieu);
 		$this->load->view('lichcongtac', $dulieu, FALSE);
 		
-	}
+	}	
 }

@@ -17,7 +17,7 @@
   <div class="container"><marquee><h3 class="text-xl-center">SỞ TÀI NGUYÊN VÀ MÔI TRƯỜNG TỈNH QUẢNG NGÃI - TRUNG TÂM CÔNG NGHỆ THÔNG TIN</h3></marquee><br><h3 class="text-xl-center">NHẬP LỊCH CÔNG TÁC</h3></div>
   
   <div class="container themCongtac">
-      <form action="nhaplichcongtac/themlichcongtac" method="post" enctype="multidata/form-data">
+      <form action="./nhaplichcongtac/themlichcongtac" method="post" enctype="multidata/form-data">
         <fieldset class="form-group">
           <label for="formGroupExampleInput">Ngày</label>
           <input name="ngay" type="date" class="form-control" id="formGroupExampleInput" placeholder="Example input">                 

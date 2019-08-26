@@ -41,8 +41,8 @@ class Nhaplichcongtac extends CI_Controller {
 		// echo '<pre>';
 		// var_dump($dulieu);
 		//$this->load->view('nhaplichcongtac', $dulieu, FALSE);		
-		$this->load->view('nhaplichcongtac', $dulieu, FALSE);	
-		$this->load->view('lichcongtac', $dulieu, FALSE);		
+		// $this->load->view('nhaplichcongtac', $dulieu, FALSE);	
+		$this->load->view('lct', $dulieu, FALSE);		
 		
 	}
 

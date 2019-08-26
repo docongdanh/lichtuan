@@ -6,6 +6,6 @@
 </head>
 <body>
 
-	<h2>Thêm mới thành công <a href="http://localhost:8080/lichtuan/">Quay về trang chủ</a></h2>
+	<h2>Đã xóa<a href="http://localhost:8080/lichtuan/">Quay về trang chủ</a></h2>
 </body>
 </html>

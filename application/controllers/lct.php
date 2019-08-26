@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class quantri extends CI_Controller {
+class lct extends CI_Controller {
 
 	public function __construct()
 	{
@@ -15,7 +15,7 @@ class quantri extends CI_Controller {
 		// $dulieu = array('dulieutucontroller' => $dulieu); //bien du lieu thanh dang mang voi key la du lieu tu controller
 		// echo '<pre>';
 		// var_dump($dulieu);
-		$this->load->view('quantri', $dulieu, FALSE);		
+		$this->load->view('lct', $dulieu, FALSE);		
 	}
 	public function deleteData($idnhanduoc)
 	{

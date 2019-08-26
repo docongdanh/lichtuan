@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>                    
  
 <div id="container">
-	<h2 align="center">LỊCH CÔNG TÁC</h2>
+	<h3 align="center">LỊCH CÔNG TÁC</h3>
 
 
 	
@@ -61,14 +61,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
            <td><?= $value['ghichu'] ?></td>
             <td><?= $value['phucvuxe'] ?></td>
             <td>
-                    <a href="index.php/quantri/editData">Sửa/</a>              
-                    <a href="index.php/quantri/deleteData/<?= $value['id'] ?>">Xóa</a>
+                    <a href="<?= base_url(); ?>index.php/lct/editData/<?= $value['id'] ?>">Sửa/</a>              
+                    <a href="<?= base_url(); ?>index.php/lct/deleteData/<?= $value['id'] ?>">Xóa</a>
             </td>
             
-        </tr>
-   </div> 
-    
+        </tr>        
+   </div>    
      <?php endforeach ?>
+    <tr>
+            <td colspan="10"><a href="<?= base_url(); ?>index.php/nhaplichcongtac">Thêm mới</a></td>
+    </tr>
    
   </table>
 </div>

@@ -23,14 +23,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>                    
  
 <div id="container">
-	<h3 align="center">LỊCH CÔNG TÁC</h3>
+	<h4 align="center">LỊCH CÔNG TÁC</h4>
 
 
 	
   <table class="table table-bordered schedule-list mb20" width="100%">
   
     <thead>
-      <tr class="w3-red">
+      <tr>
         <th>Thứ/Ngày</th>
         <th>Thời gian</th>
         <th>Nội dung</th>
@@ -61,7 +61,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
            <td><?= $value['ghichu'] ?></td>
             <td><?= $value['phucvuxe'] ?></td>
             <td>
-                    <a href="<?= base_url(); ?>index.php/lct/editData/<?= $value['id'] ?>">Sửa/</a>              
+                    <a href="<?= base_url(); ?>index.php/lct/edit/<?= $value['id'] ?>">Sửa/</a>              
                     <a href="<?= base_url(); ?>index.php/lct/deleteData/<?= $value['id'] ?>">Xóa</a>
             </td>
             

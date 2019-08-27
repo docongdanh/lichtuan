@@ -24,6 +24,32 @@ class showData extends CI_Model {
 		$this->db->where('id',$id);
 		return $this->db->delete('lct');		
 	}
+	public function editById($i)
+	{
+		// echo 'ngay lấy về "$ngay"';
+		$this->db->select('*');
+		$this->db->where('id', $i);
+		$dulieu = $this->db->get('lct');
+		$dulieu = $dulieu->result_array();
+		return $dulieu;
+	}
+	public function editdatabyid($id,$ngay,$gio,$noidung,$duhop,$chutri,$diadiem,$cqcp,$ghichu,$phucvuxe)
+	{
+		$dulieuupdate=array(
+			'id'=>$id,
+			'ngay'=>$ngay,
+			'gio'=>$gio,
+			'noidung'=>$noidung,
+			'duhop'=>$duhop,
+			'chutri'=>$chutri,
+			'diadiem'=>$diadiem,
+			'cqcp'=>$cqcp,
+			'ghichu'=>$ghichu,
+			'phucvuxe'=>$phucvuxe
+			);
+		$this->db->where('id', $id);
+		return $this->db->update('lct', $dulieuupdate);
+	}
 }
 
 /* End of file showData.php */

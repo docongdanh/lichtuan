@@ -25,8 +25,7 @@ class showData extends CI_Model {
 		return $this->db->delete('lct');		
 	}
 	public function editById($i)
-	{
-		// echo 'ngay lấy về "$ngay"';
+	{		
 		$this->db->select('*');
 		$this->db->where('id', $i);
 		$dulieu = $this->db->get('lct');
@@ -50,6 +49,38 @@ class showData extends CI_Model {
 		$this->db->where('id', $id);
 		return $this->db->update('lct', $dulieuupdate);
 	}
+	public function sw_get_current_weekday() {
+	date_default_timezone_set('Asia/Ho_Chi_Minh');
+	$weekday = date("l");
+	$weekday = strtolower($weekday);
+	switch($weekday) {
+		case 'monday':
+			$weekday = 'Thứ hai';
+			break;
+		case 'tuesday':
+			$weekday = 'Thứ ba';
+			break;
+		case 'wednesday':
+			$weekday = 'Thứ tư';
+			break;
+		case 'thursday':
+			$weekday = 'Thứ năm';
+			break;
+		case 'friday':
+			$weekday = 'Thứ sáu';
+			break;
+		case 'saturday':
+			$weekday = 'Thứ bảy';
+			break;
+		default:
+			$weekday = 'Chủ nhật';
+			break;
+	}
+	return $weekday;
+}
+
+
+
 }
 
 /* End of file showData.php */
